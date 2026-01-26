@@ -1,7 +1,7 @@
 
 const{test,expect}=require('@playwright/test')
 
-    test.skip('Alert with OK',async({page})=>{
+    test('Alert with OK',async({page})=>{
 
         await page.goto('https://testautomationpractice.blogspot.com/')
 
@@ -22,7 +22,7 @@ const{test,expect}=require('@playwright/test')
 
 
     //2)Confirmation Alert
-    test.skip('Confirmation Dialog alert',async({page})=>{
+    test('Confirmation Dialog alert',async({page})=>{
 
         await page.goto('https://testautomationpractice.blogspot.com/');
 
@@ -35,6 +35,7 @@ const{test,expect}=require('@playwright/test')
             expect(dialog.message()).toContain('Press a button!')
              await dialog.accept();
           // await dialog.dismiss();
+
         })
 
         await page.click("//button[@id='confirmBtn']");
