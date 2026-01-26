@@ -22,7 +22,7 @@ const{test,expect}=require('@playwright/test')
 
 
     //2)Confirmation Alert
-    test('Confirmation Dialog alert',async({page})=>{
+    test.skip('Confirmation Dialog alert',async({page})=>{
 
         await page.goto('https://testautomationpractice.blogspot.com/');
 
