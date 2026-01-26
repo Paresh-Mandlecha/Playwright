@@ -34,7 +34,7 @@ const{test,expect}=require('@playwright/test')
             //verify the message
             expect(dialog.message()).toContain('Press a button!')
              await dialog.accept();
-          // await dialog.dismiss();
+            //await dialog.dismiss();
 
         })
 
